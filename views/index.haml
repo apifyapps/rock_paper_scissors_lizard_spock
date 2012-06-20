@@ -1,10 +1,9 @@
 .content
   .row
     .span8.title
-      %h2
-        Rock Paper Scissors Lizard Spock
+      Rock Paper Scissors Lizard Spock
   .row
-    .span3
+    .span4
       .row.playertypes
         &nbsp;
         %span.player1type
@@ -38,3 +37,27 @@
     <area shape="rect" coords="261,299,386,423" href="#" alt="Scissors" title="Scissors"    />
     <area shape="rect" coords="113,300,238,424" href="#" alt="Lizard" title="Lizard"    />
     </map>
+  .row
+    &nbsp;
+  .row
+    %h6
+      How to Play
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/fqlDc2VICZ0" frameborder="0" allowfullscreen></iframe>
+  .row
+    &nbsp;
+  .row
+    %h6
+      Rules
+      %a{href: "http://en.wikipedia.org/wiki/Rock-paper-scissors-lizard-Spock", target: '_blank'}
+        (Source: Wikipedia)
+    %ul
+      %li Scissors cuts Paper
+      %li Paper covers Rock
+      %li Rock crushes Lizard
+      %li Lizard poisons Spock
+      %li Spock smashes Scissors
+      %li Scissors decapitates Lizard
+      %li Lizard eats Paper
+      %li Paper disproves Spock
+      %li Spock vaporizes Rock
+      %li Rock crushes Scissors
