@@ -1,0 +1,56 @@
+
+.game-content {
+  font-family: Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.right{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+.playertypes, .result{
+  margin: 10px;
+  padding: 10px;
+}
+.player1type{
+  font-size: 24px;
+  color: #7EDBED;
+  text-align: center;
+}
+.player1choice{
+  font-size: 40px;
+  color: #7EDBED;
+  text-align: center;
+}
+.player2type{
+  font-size: 24px;
+  color: #F2C483;
+  text-align: center;
+}
+.player2choice{
+  font-size: 40px;
+  color: #F2C483;
+  text-align: center;
+}
+.vs{
+  font-size: 16px;
+}
+.result{
+  font-size: 32px;
+  color: #7C94D9;
+  text-align: center;
+}
+.score{
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 5px 0px 5px 0px;
+  padding: 10px 0px 10px 0px;
+  vertical-align: middle;
+}
+.points{
+  font-size: 24px;
+  color: #FF0000;
+  vertical-align: middle;
+}

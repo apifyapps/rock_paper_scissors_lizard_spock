@@ -1,0 +1,40 @@
+.content
+  .row
+    .span8.title
+      %h2
+        Rock Paper Scissors Lizard Spock
+  .row
+    .span3
+      .row.playertypes
+        &nbsp;
+        %span.player1type
+        %span.vs
+        %span.player2type
+      .row.playerchoices
+        &nbsp;
+        %span.player1choice
+        %span.vs
+        %span.player2choice
+    .span3
+      .row.result
+        &nbsp;
+  .row
+    .player1score.span4.score
+      Player 1:
+      %span.points
+        0
+      Points
+    .player2score.span4.score
+      Player 2:
+      %span.points
+        0
+      Points
+  .row
+    <img id="rpsls-map" src="/img/rpsls.jpg" usemap="#rpsls-map" border="0" alt="" />
+    <map id="rpsls-map" name="rpsls-map">
+    <area shape="rect" coords="68,160,193,284" href="#" alt="Spock" title="Spock"    />
+    <area shape="rect" coords="185,71,310,195" href="#" alt="Rock" title="Rock"    />
+    <area shape="rect" coords="305,160,430,284" href="#" alt="Paper" title="Paper"    />
+    <area shape="rect" coords="261,299,386,423" href="#" alt="Scissors" title="Scissors"    />
+    <area shape="rect" coords="113,300,238,424" href="#" alt="Lizard" title="Lizard"    />
+    </map>
