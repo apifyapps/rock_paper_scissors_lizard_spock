@@ -2,7 +2,7 @@ var rulesUrl = "http://apify.heroku.com/api/rpslsrules.json?callback=?";
 var player1Score = 0;
 var player2Score = 0;
 var player1Type = 'You';
-var player2Type = 'Computer';
+var player2Type = 'Sheldon';
 var player1 = '';
 var player2 = '';
 var rules = [];
@@ -15,6 +15,7 @@ $(function(){
   // Load rules
   $.getJSON(rulesUrl, function(data){
     rules = JSON.parse(data);
+    displayPlayers();
     $('area').click(function(){
       player1 = $(this).attr('title');
       player2 = options[getRandomNumber(options.length)];
@@ -35,10 +36,14 @@ $(function(){
     }
   }
 
-  function updateResult(result){
-    $('.vs').html('Vs')
+  function displayPlayers(){
+    $('.vs_type').html('Vs')
     $('.player1type').html(player1Type);
     $('.player2type').html(player2Type);
+  }
+
+  function updateResult(result){
+    $('.vs_choice').html('Vs')
     $('.player1choice').html(player1);
     $('.player2choice').html(player2);
     $('.player1score .points').html(player1Score);
